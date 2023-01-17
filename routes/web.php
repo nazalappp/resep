@@ -27,6 +27,9 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/admin', function () {
     return view('layouts.admin');
 });
+Route::get('/user', function () {
+    return view('user');
+});
 
 Route::resource('/kota', KotaController::class);
 
