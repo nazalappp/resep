@@ -15,22 +15,28 @@ use App\Http\Controllers\ResepController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Auth::routes();
-
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-Route::get('/admin', function () {
-    return view('layouts.admin');
-});
-Route::get('/user', function () {
+Route::get('/', function () {
     return view('user');
 });
 
-Route::resource('/kota', KotaController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['prefix' => 'admin',
+    'middleware' => ['auth', 'isAdmin']], function () {
+        Route::get('/', function () {
+            return view('layouts.admin');
+        })->name('admin');
+        Route::resource('kota', KotaController::class);
+    });
+// Route::get('/admin', function () {
+//     return view('layouts.admin');
+// });
+// Route::get('/user', function () {
+//     return view('user');
+// });
+
+// Route::resource('/kota', KotaController::class);
 
 Route::resource('/resep', ResepController::class);

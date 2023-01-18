@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Foodee &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>ZanashCook</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -78,8 +78,10 @@
 				<div class="fh5co-text">
 					<div class="container">
 						<div class="row">
-							<h1 class="to-animate">foodee</h1>
-							<h2 class="to-animate">Lovely Designed <span>by</span> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
+							<h1 class="to-animate">Cooking</h1>
+							<h3><i><a href="login" class="to-animate">Login</a></i></h3>
+							
+							{{-- <h2 class="to-animate">L</h2> --}}
 						</div>
 					</div>
 				</div>
@@ -102,10 +104,10 @@
 						<a href="#" data-nav-section="features">Features</a>
 					</div>
 					<div class="fh5co-logo">
-						<a href="index.html">foodee</a>
+						<a href="index.html">zanashcook</a>
 					</div>
 					<div class="fh5co-menu-2">
-						<a href="#" data-nav-section="menu">Menu</a>
+						<a href="#" data-nav-section="menu">Rec ep</a>
 						<a href="#" data-nav-section="events">Events</a>
 						<a href="#" data-nav-section="reservation">Reservation</a>
 					</div>
