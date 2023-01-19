@@ -29,14 +29,13 @@ Route::group(['prefix' => 'admin',
             return view('layouts.admin');
         })->name('admin');
         Route::resource('kota', KotaController::class);
+        Route::resource('/resep', ResepController::class);
     });
 // Route::get('/admin', function () {
 //     return view('layouts.admin');
 // });
-// Route::get('/user', function () {
-//     return view('user');
-// });
+Route::get('/share', function () {
+    return view('share');
+});
 
 // Route::resource('/kota', KotaController::class);
-
-Route::resource('/resep', ResepController::class);

@@ -79,7 +79,7 @@
 					<div class="container">
 						<div class="row">
 							<h1 class="to-animate">Cooking</h1>
-							<h3><i><a href="login" class="to-animate">Login</a></i></h3>
+							<h3><i><a href="login" class="to-animate">Login</a></i	></h3>
 							
 							{{-- <h2 class="to-animate">L</h2> --}}
 						</div>
@@ -101,15 +101,15 @@
 					<div class="fh5co-menu-1">
 						<a href="#" data-nav-section="home">Home</a>
 						<a href="#" data-nav-section="about">About</a>
-						<a href="#" data-nav-section="features">Features</a>
+						
 					</div>
 					<div class="fh5co-logo">
 						<a href="index.html">zanashcook</a>
 					</div>
 					<div class="fh5co-menu-2">
-						<a href="#" data-nav-section="menu">Rec ep</a>
-						<a href="#" data-nav-section="events">Events</a>
-						<a href="#" data-nav-section="reservation">Reservation</a>
+						
+						<a href="/login">Sign In</a>
+						<a href="#" data-nav-section="events">Sign Up</a>
 					</div>
 				</div>
 				
@@ -120,8 +120,9 @@
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)"></div>
 			<div class="fh5co-2col fh5co-text">
 				<h2 class="heading to-animate">About Us</h2>
-				<p class="to-animate"><span class="firstcharacter">F</span>ar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-				<p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Get in touch</a></p>
+				<p class="to-animate"><span class="firstcharacter">Z</span>anashCook adalah sebuah website tentang resep-resep makanan di Indonesia. 
+					Misi kami di ZanashCook adalah untuk <b>membuat masak sehari-hari makin menyenangkan</b>, maka dari itu kami mendukung koki rumahan
+					di seluruh Indonesia untuk membantu satu sama lain dengan berbagi resep memasak.</p>
 			</div>
 		</div>
 
