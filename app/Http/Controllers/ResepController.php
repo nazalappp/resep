@@ -17,7 +17,7 @@ class ResepController extends Controller
      */
     public function index()
     {
-        $reseps = Resep::with('user','kota')->get();
+        $reseps = Resep::with('user','kota')->where('status', 'Proses')->get();
         return view('admin.resep.index', compact('reseps'));
     }
 
@@ -132,6 +132,7 @@ class ResepController extends Controller
         $reseps->deskripsi = $request->deskripsi;
         $reseps->bahan_bahan = $request->bahan_bahan;
         $reseps->langkah_langkah = $request->langkah_langkah;
+        $reseps->status = $request->status;
         $reseps->save();
         return redirect()
             ->route('resep.index')->with('toast_success', 'Data has been edited');

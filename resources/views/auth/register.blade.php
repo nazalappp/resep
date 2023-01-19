@@ -30,16 +30,19 @@
                 <img src="{{asset('assets/images/logo.svg')}}" alt="logo">
               </div>
               <h4>Silahkan membuat akun</h4>
-              <form class="pt-3">
+              <form class="pt-3" method="POST" action="{{route('register-create')}}">
+                @csrf
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username">
+                  <input type="text" name="name" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                  <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                 </div>
+                <input type="radio" name="role" value="Admin"> Admin<br>
+                <input type="radio" name="role" value="User"> User
                 <div class="mb-4">
                   <div class="form-check">
                     <label class="form-check-label text-muted">
@@ -49,7 +52,7 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="index.html">SIGN UP</a>
+                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
                   Sudah punya akun? <a href="login" class="text-primary">Login</a>

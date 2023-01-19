@@ -21,7 +21,7 @@
         </div>
       </li> --}}
       <li class="nav-item">
-        <a class="nav-link" href="#form-elements">
+        <a class="nav-link" href="resep">
           <i class="icon-columns menu-icon"></i>
           <span class="menu-title">Resep Terbaru</span>
           <i class="menu-title"></i>
@@ -52,7 +52,7 @@
         </div>
       </li> --}}
       <li class="nav-item">
-        <a class="nav-link" href="kota">
+        <a class="nav-link" href="admin/kota">
           <i class="icon-contract menu-icon"></i>
           <span class="menu-title">Kota</span>
           <i class="menu-title"></i>
@@ -73,7 +73,7 @@
       </li> --}}
       {{--     --}}
       <li class="nav-item">
-        <a class="nav-link" href="pages/documentation/documentation.html">
+        <a class="nav-link" href="allresep">
           <i class="icon-paper menu-icon"></i>
           <span class="menu-title">Resep Masakan</span>
         </a>

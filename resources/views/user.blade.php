@@ -108,7 +108,7 @@
 					</div>
 					<div class="fh5co-menu-2">
 						
-						<a href="/login">Sign In</a>
+						<a href="{{url('login-user')}}">Sign In</a>
 						<a href="#" data-nav-section="events">Sign Up</a>
 					</div>
 				</div>
