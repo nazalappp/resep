@@ -79,7 +79,7 @@
 					<div class="container">
 						<div class="row">
 							<h1 class="to-animate">Cooking</h1>
-							<h3><i><a href="login" class="to-animate">Login</a></i	></h3>
+							{{-- <h3><i><a href="login" class="to-animate">Login</a></i	></h3> --}}
 							
 							{{-- <h2 class="to-animate">L</h2> --}}
 						</div>
@@ -108,8 +108,8 @@
 					</div>
 					<div class="fh5co-menu-2">
 						
-						<a href="{{url('login-user')}}">Sign In</a>
-						<a href="#" data-nav-section="events">Sign Up</a>
+						<a href="#" data-nav-section="auth">Share Recep</a>
+						{{-- <a href="#" data-nav-section="events">Sign Up</a> --}}
 					</div>
 				</div>
 				
@@ -236,34 +236,34 @@
 			</div>
 		</div>
 
-		<div id="fh5co-type" style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5">
-			<div class="fh5co-overlay"></div>
+		<div id="fh5co-type" style="background-image: url(images/slide_3.jpg);" data-section="auth" data-stellar-background-ratio="0.5">
+			<div class="fh5co-overlay" ></div>
 			<div class="container">
 				<div class="row">
+					{{-- <div class="col-md-3 to-animate">
+						<div class="fh5co-type">
+							<h3 >Fruits</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div> --}}
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
-							<h3 class="with-icon icon-1">Fruits</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3 class="with-icon icon-2"><a href="login">Login</a></h3>
+							{{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
 						</div>
 					</div>
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
-							<h3 class="with-icon icon-2">Sea food</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3 class="with-icon icon-3"><a href="register">Daftar</a></h3>
+							{{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
 						</div>
 					</div>
-					<div class="col-md-3 to-animate">
-						<div class="fh5co-type">
-							<h3 class="with-icon icon-3">Vegetables</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-3 to-animate">
+					{{-- <div class="col-md-3 to-animate">
 						<div class="fh5co-type">
 							<h3 class="with-icon icon-4">Meat</h3>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 			</div>
 		</div>
