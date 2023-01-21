@@ -135,29 +135,40 @@
 							
 							<li>
 								<blockquote>
-									<p>&ldquo;Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;</p>
-									<p class="quote-author">&mdash; Nathan Myhrvold</p>
+									<p>&ldquo;Memasak adalah seni, tetapi semua seni membutuhkan pengetahuan tentang teknik dan bahan.&rdquo;</p>
+									<p class="quote-author">&mdash;Noval Gustami</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;</p>
-									<p class="quote-author">&mdash; Lev L. Spiro</p>
+									<p>&ldquo;Masakan yang baik itu jujur, tulus, dan sederhana.&rdquo;</p>
+									<p class="quote-author">&mdash;Elizabeth David</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</p>
+									<p>&ldquo;Kita belajar dari masakan orang lain, lalu kita mulai membuatnya sendiri.&rdquo;</p>
+									<p class="quote-author">&mdash; Nazala Putri</p>
+								</blockquote>
+							</li>
+							<li>
+								<blockquote>
+									<p>&ldquo;Memasak adalah kegagalan demi kegagalan, dan begitulah akhirnya kamu belajar.&rdquo;</p>
 									<p class="quote-author">&mdash; Julia Child</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;</p>
-									<p class="quote-author">&mdash; Josh Billings</p>
+									<p>&ldquo;Memasak, seperti dalam semua seni lainnya, kesederhanaan adalah tanda kesempurnaan.&rdquo;</p>
+									<p class="quote-author">&mdash; Curnonsky</p>
 								</blockquote>
 							</li>
-							
+							<li>
+								<blockquote>
+									<p>&ldquo;Asam, manis, pahit, pedas - semua harus dicicipi.&rdquo;</p>
+									<p class="quote-author">&mdash; Pepatah China</p>
+								</blockquote>
+							</li>
 							
 						</ul>
 					</div>
@@ -166,7 +177,7 @@
 			</div>
 		</div>
 
-		<div id="fh5co-featured" data-section="features">
+		{{-- <div id="fh5co-featured" data-section="features">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
@@ -234,7 +245,7 @@
 				</div>
 
 			</div>
-		</div>
+		</div> --}}
 
 		<div id="fh5co-type" style="background-image: url(images/slide_3.jpg);" data-section="auth" data-stellar-background-ratio="0.5">
 			<div class="fh5co-overlay" ></div>
@@ -246,6 +257,12 @@
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 						</div>
 					</div> --}}
+					<div class="col-md-3 to-animate">
+						<div class="fh5co-type">
+							{{-- <h3 class="with-icon icon-2"><a href="login">Login</a></h3> --}}
+							{{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
+						</div>
+					</div>
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
 							<h3 class="with-icon icon-2"><a href="login">Login</a></h3>
@@ -272,14 +289,14 @@
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Food Menu</h2>
-						<p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<h2 class="heading to-animate">Resep</h2>
+						<p class="sub-heading to-animate">Bingung mau masak apa dengan bahan yang ada di lemari es kamu? Cari dibawah sini.</p>
 					</div>
 				</div>
 				<div class="row row-padded">
 					<div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Drinks</h2>
+							<h2 class="fh5co-drinks">Makanan Berat</h2>
 							<ul>
 								<li>
 									<div class="fh5co-food-desc">
@@ -342,7 +359,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-dishes">Steak</h2>
+							<h2 class="fh5co-dishes">Cemilan</h2>
 							<ul>
 								<li>
 									<div class="fh5co-food-desc">
@@ -405,7 +422,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Drinks</h2>
+							<h2 class="fh5co-drinks">Minuman</h2>
 							<ul>
 								<li>
 									<div class="fh5co-food-desc">
@@ -538,7 +555,7 @@
 			</div>
 		</div>
 
-		<div id="fh5co-events" data-section="events" style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5">
+		{{-- <div id="fh5co-events" data-section="events" style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="fh5co-overlay"></div>
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
@@ -633,7 +650,7 @@
 						</div>
 				</div>
 			</div>
-		</div>
+		</div> --}}
 
 		
 	</div>
@@ -642,12 +659,12 @@
 		<div class="container">
 			<div class="row row-padded">
 				<div class="col-md-12 text-center">
-					<p class="to-animate">&copy; 2016 Foodee Free HTML5 Template. <br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
-					</p>
+					{{-- <p class="to-animate">&copy;<br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a> --}}
+					<p class="to-animate"> Designed by Zanashi Cook</p>
 					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
 				</div>
 			</div>
-			<div class="row">
+			{{-- <div class="row">
 				<div class="col-md-12 text-center">
 					<ul class="fh5co-social">
 						<li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
@@ -655,7 +672,7 @@
 						<li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
 					</ul>
 				</div>
-			</div>
+			</div> --}}
 		</div>
 	</div>
 
