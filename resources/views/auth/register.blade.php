@@ -41,8 +41,8 @@
                 <div class="form-group">
                   <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <input type="radio" name="role" value="Admin"> Admin<br>
-                <input type="radio" name="role" value="User"> User
+                {{-- <input type="radio" name="role" value="Admin"> Admin<br>
+                <input type="radio" name="role" value="User"> User --}}
                 <div class="mb-4">
                   <div class="form-check">
                     <label class="form-check-label text-muted">

@@ -23,9 +23,9 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index(){
-        if (Auth::user()->role == 'admin') {
-            return redirect('/admin');
-        }
+        // if (Auth::user()->role == 'admin') {
+        //     return redirect('/admin');
+        // }
         return view('home');
     }
 }
