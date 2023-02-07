@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Kota;
 use Illuminate\Http\Request;
+use Alert;
 
 class KotaController extends Controller
 {
@@ -89,8 +90,8 @@ class KotaController extends Controller
         $kotas =  Kota::findOrFail($id);
         $kotas->nama_kota = $request->nama_kota;
         $kotas->save();
-        return redirect()
-            ->route('kota.index')->with('toast_success', 'Data has been edited');
+        Alert::success('Done', 'Data berhasil diedit')->autoClose(2000);
+        return redirect()->route('kota.index');
     }
 
     /**

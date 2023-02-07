@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Alert;
 use App\Models\Kota;
+use App\Models\Resep;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -39,7 +41,6 @@ class ShareController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'user_id' => 'required',
             'kota_id' => 'required',
             'judul' => 'required',
             'gambar_resep' => 'required',
@@ -49,7 +50,7 @@ class ShareController extends Controller
         ]);
 
         $reseps = new Resep();
-        $reseps->user_id = $request->user_id;
+        $reseps->user_id = auth()->user()->id;
         $reseps->kota_id = $request->kota_id;
         $reseps->judul = $request->judul;
         // $reseps->gambar_resep = $request->gambar_resep;
@@ -64,8 +65,14 @@ class ShareController extends Controller
         $reseps->bahan_bahan = $request->bahan_bahan;
         $reseps->langkah_langkah = $request->langkah_langkah;
         $reseps->save();
-        return redirect()
-            ->route('share.index')->with('toast_success', 'Data has been edited');
+        Alert::success('Selesai', 'Terimakasih tolong tunggu konfirmasi dari Admin.
+        
+        
+        
+        
+        
+        ')->autoClose(2000);
+        return redirect()->route('share.index');
     }
 
     /**

@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>ZanashCook</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('assets/vendors/feather/feather.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendors/ti-icons/css/themify-icons.css')}}">
@@ -26,8 +26,9 @@
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="../../index.html"><img src="{{asset('assets/images/logo.svg')}}" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="{{asset('assets/images/logo-mini.svg')}}" alt="logo"/></a>
+        <h3><b><i>ZanashCook</i></b></h3>
+        {{-- <a class="navbar-brand brand-logo mr-5" href="../../index.html"><img src="{{asset('assets/images/logo.svg')}}" class="mr-2" alt="logo"/></a> --}}
+        {{-- <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="{{asset('assets/images/logo-mini.svg')}}" alt="logo"/></a> --}}
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -46,7 +47,7 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown">
+          {{-- <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
               <i class="icon-bell mx-0"></i>
               <span class="count"></span>
@@ -93,16 +94,12 @@
                 </div>
               </a>
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{asset('assets/images/faces/face28.jpg')}}" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
-                <i class="ti-settings text-primary"></i>
-                Settings
-              </a>
               <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
                 <i class="ti-power-off text-primary"></i>
                 Logout
@@ -296,7 +293,7 @@
       </div>
       <!-- partial --> --}}
       <!-- partial:../../partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      {{-- <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="../../index.html">
@@ -399,13 +396,13 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> --}}
       <!-- partial -->
       <div class="col-md-12">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Resep</h4>
-            <form action="{{ route('resep.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('share.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
               <div class="form-group">
                 <label>Kota</label>
@@ -473,6 +470,8 @@
   <script src="{{asset('assets/js/typeahead.js')}}"></script>
   <script src="{{asset('assets/js/select2.js')}}"></script>
   <!-- End custom js for this page-->
+
+  @include('sweetalert::alert')
 </body>
 
 </html>

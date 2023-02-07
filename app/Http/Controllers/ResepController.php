@@ -108,30 +108,10 @@ class ResepController extends Controller
     {
         //validasi
         $validated = $request->validate([
-            'user_id' => 'required',
-            'kota_id' => 'required',
-            'judul' => 'required',
-            'gambar_resep' => 'required',
-            'deskripsi' => 'required',
-            'bahan_bahan' => 'required',
-            'langkah_langkah' => 'required',
+            'status' => 'required',
         ]);
 
         $reseps = Resep::findOrFail($id);
-        $reseps->user_id = $request->user_id;
-        $reseps->kota_id = $request->kota_id;
-        $reseps->judul = $request->judul;
-        // $reseps->gambar_resep = $request->gambar_resep;
-        if ($request->hasFile('gambar_resep')) {
-            $reseps->deleteImage(); //menghapus image sebelum di update melalui method deleteImage di model
-            $image = $request->file('gambar_resep');
-            $name = rand(1000, 9999) . $image->getClientOriginalName();
-            $image->move('images/gambar_resep/', $name);
-            $reseps->gambar_resep = $name;
-        }
-        $reseps->deskripsi = $request->deskripsi;
-        $reseps->bahan_bahan = $request->bahan_bahan;
-        $reseps->langkah_langkah = $request->langkah_langkah;
         $reseps->status = $request->status;
         $reseps->save();
         return redirect()

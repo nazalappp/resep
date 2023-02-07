@@ -5,9 +5,9 @@
     <div class="card">
         <div class="card-body">
         <h4 class="card-title">Resep</h4>
-        <a href="{{ route('resep.create') }}" class="btn btn-sm btn-primary" style="float: right">
+        {{-- <a href="{{ route('resep.create') }}" class="btn btn-sm btn-primary" style="float: right">
             Tambah Data
-        </a>
+        </a> --}}
         <div class="table-responsive">
             <table class="table">
             <thead>
