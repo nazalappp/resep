@@ -1,7 +1,8 @@
 <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-      <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('assets/images/logo.svg')}}" class="mr-2" alt="logo"/></a>
-      <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('assets/images/logo-mini.svg')}}" alt="logo"/></a>
+      <h3><b><i>ZanashCook</i></b></h3>
+      {{-- <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('images/food.png')}}" class="mr-2" alt="logo"/></a> --}}
+      {{-- <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('assets/images/logo-mini.svg')}}" alt="logo"/></a> --}}
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
       <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -73,10 +74,6 @@
             <img src="{{asset('assets/images/faces/face28.jpg')}}" alt="profile"/>
           </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-            <a class="dropdown-item">
-              <i class="ti-settings text-primary"></i>
-              Settings
-            </a>
             <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
               <i class="ti-power-off text-primary"></i>
               Logout
@@ -86,6 +83,7 @@
             </form>
           </div>
         </li>
+        <li class="nav-item nav-settings">Admin</li>
         {{-- <li class="nav-item nav-settings d-none d-lg-flex">
           <a class="nav-link" href="#">
             <i class="icon-ellipsis"></i>

@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Suka Suka</title>
+  <title>Zanash Cook</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('assets/vendors/feather/feather.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendors/ti-icons/css/themify-icons.css')}}">
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div id="right-sidebar" class="settings-panel">
+      {{-- <div id="right-sidebar" class="settings-panel">
         <i class="settings-close ti-close"></i>
         <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
           <li class="nav-item">
@@ -195,7 +195,7 @@
           </div>
           <!-- chat tab ends -->
         </div>
-      </div>
+      </div> --}}
       <!-- partial -->
       <!-- sidebar -->
       @include('layouts.sidebar')

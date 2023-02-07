@@ -41,8 +41,8 @@ Route::middleware('auth')->group(function(){
 
 Route::group(['prefix' => 'admin',
     'middleware' => ['auth', 'isAdmin']], function () {
-        Route::get('/', function () {
-            return view('layouts.admin');
+        Route::get('/dashboard', function () {
+            return view('home');
         })->name('admin');
         Route::resource('kota', KotaController::class);
         Route::resource('resep', ResepController::class);
