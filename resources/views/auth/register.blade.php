@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>ZanashCook</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('assets/vendors/feather/feather.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendors/ti-icons/css/themify-icons.css')}}">
@@ -27,9 +27,8 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <div class="brand-logo">
-                <img src="{{asset('assets/images/logo.svg')}}" alt="logo">
+                <h3><b><i>Zanash Cook</i></b></h3>
               </div>
-              <h4>Silahkan membuat akun</h4>
               <form class="pt-3" method="POST" action="{{route('register-create')}}">
                 @csrf
                 <div class="form-group">
@@ -43,19 +42,11 @@
                 </div>
                 {{-- <input type="radio" name="role" value="Admin"> Admin<br>
                 <input type="radio" name="role" value="User"> User --}}
-                <div class="mb-4">
-                  <div class="form-check">
-                    <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input">
-                      I agree to all Terms & Conditions
-                    </label>
-                  </div>
-                </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
+                  <button type="submit" class="btn btn-block btn-dark btn-lg font-weight-medium auth-form-btn">Daftar</button>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
-                  Sudah punya akun? <a href="login" class="text-primary">Login</a>
+                  Sudah punya akun? <a href="login" class="text-dark">Masuk</a>
                 </div>
               </form>
             </div>

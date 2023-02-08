@@ -101,7 +101,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
-                <i class="ti-power-off text-primary"></i>
+                <i class="ti-power-off text-dark"></i>
                 Logout
               </a>
               <form action="{{route('logout')}}" class="d-none" id="logout-form" method="post" >
@@ -109,15 +109,11 @@
               </form>
             </div>
           </li>
-          <li class="nav-item nav-settings d-none d-lg-flex">
-            <a class="nav-link" href="#">
-              <i class="icon-ellipsis"></i>
-            </a>
-          </li>
+          <li class="nav-item nav-profile dropdown">{{Auth()->user()->name}}</li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        {{-- <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="icon-menu"></span>
-        </button>
+        </button> --}}
       </div>
     </nav>
     <!-- partial -->
@@ -157,7 +153,7 @@
               <form class="form w-100">
                 <div class="form-group d-flex">
                   <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
-                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                  <button type="submit" class="add btn btn-dark todo-list-add-btn" id="add-task">Add</button>
                 </div>
               </form>
             </div>
@@ -441,7 +437,7 @@
               </div>
               <div class="form-check form-check-flat form-check-primary">
               </div>
-              <button type="submit" class="btn btn-primary mr-2">Submit</button>
+              <button type="submit" class="btn btn-dark mr-2">Kirim</button>
             </form>
           </div>
         </div>

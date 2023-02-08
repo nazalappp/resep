@@ -48,10 +48,10 @@
               @enderror
                 </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-block btn-dark btn-lg font-weight-medium auth-form-btn">SIGN IN</button>
+                  <button type="submit" class="btn btn-block btn-dark btn-lg font-weight-medium auth-form-btn">Masuk</button>
                 </div>
                 <div class="mt-3">
-                  Belum punya akun ? <a href="register">Daftar dulu dong</a>
+                  Belum punya akun ? <a href="register" class="text-dark">Daftar dulu dong.</a>
                 </div>
               </form>
             </div>
