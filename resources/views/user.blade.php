@@ -136,13 +136,13 @@
 							<li>
 								<blockquote>
 									<p>&ldquo;Memasak adalah seni, tetapi semua seni membutuhkan pengetahuan tentang teknik dan bahan.&rdquo;</p>
-									<p class="quote-author">&mdash;Noval Gustami</p>
+									<p class="quote-author">&mdash; Irfan Maulana</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
 									<p>&ldquo;Masakan yang baik itu jujur, tulus, dan sederhana.&rdquo;</p>
-									<p class="quote-author">&mdash;Elizabeth David</p>
+									<p class="quote-author">&mdash; Elizabeth David</p>
 								</blockquote>
 							</li>
 							<li>

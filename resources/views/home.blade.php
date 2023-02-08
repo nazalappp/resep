@@ -16,7 +16,7 @@
 
                     {{ __('You are logged in!') }}
                     <br>
-                    <p>KAMU SUDAH LOGIN COK INI DASHBOARD</p>
+                    <p>Selamat datang Admin!</p>
                 </div>
             </div>
         </div>
