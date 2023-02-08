@@ -12,9 +12,12 @@
             <label>Nama Kota</label>
             <input type="text" class="form-control" name="nama_kota" value="{{ $kotas->nama_kota }}">
           </div>
-          <div class="form-check form-check-flat form-check-primary">
+          <div class="form-check form-check-flat form-check-dark">
           </div>
-          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+          <button type="submit" class="btn btn-dark mr-2">Edit</button>
+          <a href="{{route('kota.index')}}" class="btn btn-dark mr-2">
+            Kembali
+          </a>
         </form>
       </div>
     </div>

@@ -5,7 +5,7 @@
     <div class="card">
         <div class="card-body">
         <h4 class="card-title">Provinsi Jawa Barat</h4>
-        <a href="{{ route('kota.create') }}" class="btn btn-sm btn-primary" style="float: right">
+        <a href="{{ route('kota.create') }}" class="btn btn-sm btn-dark" style="float: right">
             Tambah Data
         </a>
         <div class="table-responsive">

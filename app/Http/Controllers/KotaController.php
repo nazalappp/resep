@@ -90,7 +90,7 @@ class KotaController extends Controller
         $kotas =  Kota::findOrFail($id);
         $kotas->nama_kota = $request->nama_kota;
         $kotas->save();
-        Alert::success('Done', 'Data berhasil diedit')->autoClose(2000);
+        Alert::success('Selesai', 'Data berhasil diedit')->autoClose(2000);
         return redirect()->route('kota.index');
     }
 

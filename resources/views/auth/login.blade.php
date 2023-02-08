@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Suka Suka Admin</title>
+  <title>ZanashCook</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('assets/vendors/feather/feather.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendors/ti-icons/css/themify-icons.css')}}">
@@ -27,9 +27,8 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <div class="brand-logo">
-                <img src="{{asset('assets/images/logo.svg')}}" alt="logo">
+                <h3><b><i>Zanash Cook</i></b></h3>
               </div>
-              <h4>Hi! Apa Kabar?</h4>
               <form class="pt-3" method="POST" action="{{route('login')}}">
                 @csrf
                 <div class="form-group">
@@ -49,7 +48,7 @@
               @enderror
                 </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN IN</button>
+                  <button type="submit" class="btn btn-block btn-dark btn-lg font-weight-medium auth-form-btn">SIGN IN</button>
                 </div>
                 <div class="mt-3">
                   Belum punya akun ? <a href="register">Daftar dulu dong</a>

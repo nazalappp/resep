@@ -99,8 +99,8 @@
 			<div class="fh5co-main-nav">
 				<div class="container-fluid">
 					<div class="fh5co-menu-1">
-						<a href="#" data-nav-section="home">Home</a>
-						<a href="#" data-nav-section="about">About</a>
+						<a href="#" data-nav-section="home">Beranda</a>
+						<a href="#" data-nav-section="about">Tentang</a>
 						
 					</div>
 					<div class="fh5co-logo">
@@ -108,7 +108,7 @@
 					</div>
 					<div class="fh5co-menu-2">
 						
-						<a href="#" data-nav-section="auth">Share Recep</a>
+						<a href="#" data-nav-section="auth">Bagikan Resep</a>
 						{{-- <a href="#" data-nav-section="events">Sign Up</a> --}}
 					</div>
 				</div>
@@ -119,10 +119,10 @@
 		<div id="fh5co-about" data-section="about">
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)"></div>
 			<div class="fh5co-2col fh5co-text">
-				<h2 class="heading to-animate">About Us</h2>
-				<p class="to-animate"><span class="firstcharacter">Z</span>anashCook adalah sebuah website tentang resep-resep makanan di Indonesia. 
+				<h2 class="heading to-animate">Tentang Kami</h2>
+				<p class="to-animate"><span class="firstcharacter">Z</span>anashCook adalah sebuah website tentang resep-resep makanan di seluruh kota Provinsi Jawa Barat. 
 					Misi kami di ZanashCook adalah untuk <b>membuat masak sehari-hari makin menyenangkan</b>, maka dari itu kami mendukung koki rumahan
-					di seluruh Indonesia untuk membantu satu sama lain dengan berbagi resep memasak.</p>
+					di seluruh Provinsi Jawa Barat untuk membantu satu sama lain dengan berbagi resep memasak.</p>
 			</div>
 		</div>
 
@@ -265,7 +265,7 @@
 					</div>
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
-							<h3 class="with-icon icon-2"><a href="login">Login</a></h3>
+							<h3 class="with-icon icon-2"><a href="login">Masuk</a></h3>
 							{{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
 						</div>
 					</div>
@@ -296,7 +296,7 @@
 				<div class="row row-padded">
 					<div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Makanan Berat</h2>
+							<h2 class="fh5co">Makanan Berat</h2>
 							<ul>
 								<li>
 									<div class="fh5co-food-desc">
@@ -359,7 +359,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-dishes">Cemilan</h2>
+							<h2 class="fh5co">Cemilan</h2>
 							<ul>
 								<li>
 									<div class="fh5co-food-desc">
@@ -422,7 +422,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Minuman</h2>
+							<h2 class="fh5co">Minuman</h2>
 							<ul>
 								<li>
 									<div class="fh5co-food-desc">
@@ -483,7 +483,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-6">
+					{{-- <div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
 							<h2 class="fh5co-dishes">Steak</h2>
 							<ul>
@@ -545,11 +545,11 @@
 								</li>
 							</ul>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4 text-center to-animate-2">
-						<p><a href="#" class="btn btn-primary btn-outline">More Food Menu</a></p>
+						<p><a href="#" class="btn btn-primary btn-outline">Tampilkan Semua Resep</a></p>
 					</div>
 				</div>
 			</div>
@@ -660,8 +660,8 @@
 			<div class="row row-padded">
 				<div class="col-md-12 text-center">
 					{{-- <p class="to-animate">&copy;<br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a> --}}
-					<p class="to-animate"> Designed by Zanashi Cook</p>
-					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+					<p class="to-animate"> Desain Oleh Zanashi Cook</p>
+					<p class="text-center to-animate"><a href="#" class="js-gotop">Kembali Keatas</a></p>
 				</div>
 			</div>
 			{{-- <div class="row">

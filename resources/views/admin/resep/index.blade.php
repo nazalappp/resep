@@ -45,9 +45,9 @@
                                 class="btn btn-sm btn-outline-success">
                                 Edit
                             </a>
-                            <button type="submit" class="btn btn-sm btn-outline-danger"
+                            {{-- <button type="submit" class="btn btn-sm btn-outline-danger"
                                 onclick="return confirm('Apakah Anda Yakin?')">Delete
-                            </button>
+                            </button> --}}
                         </form>
                     </td>
                 </tr>
