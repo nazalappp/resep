@@ -65,13 +65,13 @@ class RegisterController extends Controller
      */
     protected function create(Request $data)
     {
-        
          User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             // 'role' => $data['role'],
         ]);
-        return view('/share');
+        return redirect()->route('login')->with('toast_success', 'Register Berhasil');
     }
 }
+

@@ -392,7 +392,7 @@
                 <label>Kota</label>
                 <select name="kota_id"
                   class="form-control @error('kota_id') is-invalid @enderror">
-                  @foreach ($kotas as $kota)               
+                  @foreach ($kotas as $kota)
                     <option value="{{ $kota->id }}">{{ $kota->nama_kota }}</option>
                   @endforeach
                 </select>
