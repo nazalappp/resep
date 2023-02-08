@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Alert;
 use App\Models\Kota;
 use App\Models\Resep;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ShareController extends Controller
 {
@@ -66,11 +66,11 @@ class ShareController extends Controller
         $reseps->langkah_langkah = $request->langkah_langkah;
         $reseps->save();
         Alert::success('Selesai', 'Terimakasih tolong tunggu konfirmasi dari Admin.
-        
-        
-        
-        
-        
+
+
+
+
+
         ')->autoClose(2000);
         return redirect()->route('share.index');
     }
