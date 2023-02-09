@@ -51,9 +51,9 @@
               class="form-control mb-2  @error('langkah_langkah') is-invalid @enderror" placeholder="Langkah-Langkah"
             ></textarea>
           </div>
-          <div class="form-check form-check-flat form-check-primary">
+          <div class="form-check form-check-flat form-check-dark">
           </div>
-          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+          <button type="submit" class="btn btn-dark mr-2">Submit</button>
         </form>
       </div>
     </div>

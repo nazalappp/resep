@@ -11,9 +11,9 @@
             <label>Nama Kota</label>
             <input type="text" class="form-control" name="nama_kota" placeholder="Nama Kota">
           </div>
-          <div class="form-check form-check-flat form-check-primary">
+          <div class="form-check form-check-flat form-check-dark">
           </div>
-          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+          <button type="submit" class="btn btn-dark mr-2">Submit</button>
         </form>
       </div>
     </div>

@@ -4,7 +4,7 @@
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
-        <h4 class="card-title">Provinsi Jawa Barat</h4>
+        <h4 class="card-title">Data Kota Di Indonesia</h4>
         <a href="{{ route('kota.create') }}" class="btn btn-sm btn-dark" style="float: right">
             Tambah Data
         </a>
