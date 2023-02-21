@@ -298,65 +298,25 @@
 						<div class="fh5co-food-menu to-animate-2">
 							<h2 class="fh5co">Makanan Berat</h2>
 							<ul>
+								@foreach ($reseps as $resep)
+									
+								
 								<li>
 									<div class="fh5co-food-desc">
 										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
+											<img src="{{$resep->image()}}" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Pineapple Juice</h3>
-											<p>Far far away, behind the word mountains.</p>
+											<a href=""><h3>{{$resep->judul}}</h3></a>
+											<p>{{$resep->deskripsi}}.</p>
 										</div>
 									</div>
-									<div class="fh5co-food-pricing">
-										$17.50
-									</div>
 								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Green Juice</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$7.99
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Soft Drinks</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$12.99
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Carlo Rosee Drinks</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$12.99
-									</div>
-								</li>
+								@endforeach
 							</ul>
 						</div>
 					</div>
+					
 					<div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
 							<h2 class="fh5co">Cemilan</h2>

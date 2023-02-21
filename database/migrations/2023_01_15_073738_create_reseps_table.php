@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('deskripsi');
             $table->text('bahan_bahan');
             $table->text('langkah_langkah');
+            $table->enum('kategori',['Berat','Cemilan','Pilih'])->default('Pilih');
             $table->enum('status',['Setuju','Tolak','Proses'])->default('Proses');
             $table->timestamps();
         });

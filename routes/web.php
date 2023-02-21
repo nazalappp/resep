@@ -10,6 +10,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AllresepController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Frontend\ResepUserController;
 // use App\Http\Controllers\Auth\LoginController;
 
 /*
@@ -23,9 +24,11 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-Route::get('/', function () {
-    return view('user');
-});
+// Route::get('/', function () {
+//     return view('user');
+// });
+
+Route::get('/',[ResepUserController::class, 'resep']);
 
 Auth::routes();
 
