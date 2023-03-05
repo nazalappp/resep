@@ -12,6 +12,8 @@ class AllresepController extends Controller
         return view('admin.allresep.index', compact('reseps'));
     }
 
+    // jangan lupa kujungi refalfalah.me ya
+
     public function destroy($id)
     {
         $reseps = Resep::findOrFail($id);

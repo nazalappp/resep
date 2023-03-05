@@ -51,6 +51,7 @@ Route::group(['prefix' => 'admin',
         })->name('admin');
         Route::resource('kota', KotaController::class);
         Route::resource('kategori', KategoriController::class);
+        // kunjungi refalfalah.me
         Route::resource('resepadmin', ResepController::class);
         Route::resource('allresep', AllresepController::class);
     });
