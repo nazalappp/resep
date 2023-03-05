@@ -21,6 +21,11 @@ class Resep extends Model
         return $this->belongsTo(Kota::class);
         
     }
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class);
+        
+    }
     public function image()
     {
         if ($this->gambar_resep && file_exists(public_path('images/gambar_resep/' . $this->gambar_resep))) {

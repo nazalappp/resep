@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Resep;
 use App\Models\Kota;
+use App\Models\Kategori;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,7 @@ class ResepController extends Controller
      */
     public function index()
     {
-        $reseps = Resep::with('user','kota')->where('status', 'Proses')->get();
+        $reseps = Resep::with('user','kota','kategori')->where('status', 'Proses')->get();
         return view('admin.resep.index', compact('reseps'));
     }
 
@@ -29,8 +30,9 @@ class ResepController extends Controller
     public function create()
     {
         $kotas = Kota::all();
+        $kategoris = Kategori::all();
         $users = User::all();
-        return view('admin.resep.create', compact('kotas','users'));
+        return view('admin.resep.create', compact('kotas','kategoris','users'));
     }
 
     /**
@@ -45,6 +47,7 @@ class ResepController extends Controller
         $validated = $request->validate([
             'user_id' => 'required',
             'kota_id' => 'required',
+            'kategori_id' => 'required',
             'judul' => 'required',
             'gambar_resep' => 'required',
             'deskripsi' => 'required',
@@ -55,6 +58,7 @@ class ResepController extends Controller
         $reseps = new Resep();
         $reseps->user_id = $request->user_id;
         $reseps->kota_id = $request->kota_id;
+        $reseps->kategori_id = $request->kategori_id;
         $reseps->judul = $request->judul;
         // $reseps->gambar_resep = $request->gambar_resep;
         if ($request->hasFile('gambar_resep')) {
@@ -94,7 +98,8 @@ class ResepController extends Controller
         $reseps = Resep::findOrFail($id);
         $users = User::all();
         $kotas = Kota::all();
-        return view('admin.resep.edit', compact('reseps','users','kotas'));
+        $kategoris = Kategori::all();
+        return view('admin.resep.edit', compact('reseps','users','kotas','kategoris'));
     }
 
     /**

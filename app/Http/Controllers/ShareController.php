@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Kota;
+use App\Models\Kategori;
 use App\Models\Resep;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -19,7 +19,8 @@ class ShareController extends Controller
     {
 
         $kotas = Kota::all();
-        return view('share',compact('kotas'));
+        $kategoris = Kategori::all();
+        return view('share',compact('kategoris','kotas'));
     }
 
     /**
@@ -42,6 +43,7 @@ class ShareController extends Controller
     {
         $validated = $request->validate([
             'kota_id' => 'required',
+            'kategori_id' => 'required',
             'judul' => 'required',
             'gambar_resep' => 'required',
             'deskripsi' => 'required',
@@ -52,6 +54,7 @@ class ShareController extends Controller
         $reseps = new Resep();
         $reseps->user_id = auth()->user()->id;
         $reseps->kota_id = $request->kota_id;
+        $reseps->kategori_id = $request->kategori_id;
         $reseps->judul = $request->judul;
         // $reseps->gambar_resep = $request->gambar_resep;
         if ($request->hasFile('gambar_resep')) {

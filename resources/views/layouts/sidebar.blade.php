@@ -13,6 +13,12 @@
         <span class="menu-title">Kota</span>
       </a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link {{ (request()->is('admin/kategori')) ? 'active' : '' }}" href="{{url('admin/kategori')}}">
+        <i class="icon-book menu-icon"></i>
+        <span class="menu-title">Kategori</span>
+      </a>
+    </li>
 
     <li class="nav-item">
       <a class="nav-link {{ (request()->is('admin/resep')) ? 'active' : '' }}" href="{{url('admin/resep')}}">

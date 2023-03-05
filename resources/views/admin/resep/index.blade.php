@@ -15,6 +15,7 @@
                     <th>No</th>
                     <th>User</th>
                     <th>Nama Kota</th>
+                    <th>Kategori</th>
                     <th>Judul</th>
                     <th>Gambar</th>
                     <th>Status</th>
@@ -27,6 +28,7 @@
                     <td>{{$loop->iteration }}</td>
                     <td>{{$resep->user->name}}</td>
                     <td>{{$resep->kota->nama_kota}}</td>
+                    <td>{{$resep->kategori->nama_kategori}}</td>
                     <td>{{$resep->judul}}</td>
                     <td>
                         @if($resep->gambar_resep)

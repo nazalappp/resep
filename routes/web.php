@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KotaController;
 use App\Http\Controllers\ResepController;
+use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ShareController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AllresepController;
@@ -39,6 +40,7 @@ Route::middleware('auth')->group(function(){
     //     return view('share');
     // });
     Route::resource('/share', ShareController::class);
+    Route::resource('/profile', ProfileController::class);
 });
 
 
@@ -48,6 +50,7 @@ Route::group(['prefix' => 'admin',
             return view('home');
         })->name('admin');
         Route::resource('kota', KotaController::class);
+        Route::resource('kategori', KategoriController::class);
         Route::resource('resep', ResepController::class);
         Route::resource('allresep', AllresepController::class);
     });
