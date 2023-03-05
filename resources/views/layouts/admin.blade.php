@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="{{asset('assets/css/vertical-layout-light/style.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
   <div class="container-scroller">
@@ -57,7 +58,7 @@
         <!-- content-wrapper ends -->
       </div>
       <!-- main-panel ends -->
-    </div>   
+    </div>
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
