@@ -19,6 +19,11 @@
               <img src="{{asset('assets/images/faces/face28.jpg')}}" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              {{-- <a href="{{ url('/profile')}}">
+                <i class="ni ni-user-run">
+                  <span>Profile</span>
+                </i>
+              </a> --}}
               <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
                 <i class="ti-power-off text-dark"></i>
                 Logout
