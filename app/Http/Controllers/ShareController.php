@@ -68,14 +68,8 @@ class ShareController extends Controller
         $reseps->bahan_bahan = $request->bahan_bahan;
         $reseps->langkah_langkah = $request->langkah_langkah;
         $reseps->save();
-        Alert::success('Selesai', 'Terimakasih tolong tunggu konfirmasi dari Admin.
-
-
-
-
-
-        ')->autoClose(2000);
-        return redirect()->route('share.index');
+        Alert::success('Selesai', 'Terimakasih tolong tunggu konfirmasi dari Admin.')->autoClose(3000);
+        return redirect('/profile');
     }
 
     /**
