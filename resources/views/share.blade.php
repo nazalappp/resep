@@ -3,32 +3,7 @@
 @section('content')
   <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      
-      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-        
-        <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item nav-profile dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="{{asset('assets/images/faces/face28.jpg')}}" alt="profile"/>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
-                <i class="ti-power-off text-dark"></i>
-                Logout
-              </a>
-              <form action="{{route('logout')}}" class="d-none" id="logout-form" method="post" >
-                @csrf
-              </form>
-            </div>
-          </li>
-          <li class="nav-item nav-profile dropdown">{{Auth()->user()->name}}</li>
-        </ul>
-        {{-- <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-          <span class="icon-menu"></span>
-        </button> --}}
-      </div>
-    </nav>
+   
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial -->
