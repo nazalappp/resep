@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <b>Profil</b>
+                        <b>Profile</b>
                         <ul class="navbar-nav align-items-center d-none d-md-flex">
                             <li class="nav-item dropdown">
                                 <div class="row">

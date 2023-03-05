@@ -44,8 +44,8 @@
         </li>
         <li class="nav-item">
             <a class="nav-link {{ Request::is('/share') ? 'active' : '' }}" href="{{ url('/share') }}">
-                <i class="icon-paper menu-icon"></i>
-                <span class="menu-title">Tambah Resep </span>
+                <i class="icon-menu menu-icon mr-2"></i>
+                <span class="menu-title">Tambah Resep</span>
             </a>
         </li>
     @endif
