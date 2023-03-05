@@ -51,7 +51,7 @@ Route::group(['prefix' => 'admin',
         })->name('admin');
         Route::resource('kota', KotaController::class);
         Route::resource('kategori', KategoriController::class);
-        Route::resource('resep', ResepController::class);
+        Route::resource('resepadmin', ResepController::class);
         Route::resource('allresep', AllresepController::class);
     });
 // Route::get('/admin', function () {

@@ -22,7 +22,7 @@
         </li>
 
         <li class="nav-item">
-        <a class="nav-link {{ (request()->is('admin/resep')) ? 'active' : '' }}" href="{{url('admin/resep')}}">
+        <a class="nav-link {{ (request()->is('admin/resepadmin')) ? 'active' : '' }}" href="{{url('admin/resepadmin')}}">
             <i class="icon-menu menu-icon"></i>
             <span class="menu-title">Resep</span>
         </a>
