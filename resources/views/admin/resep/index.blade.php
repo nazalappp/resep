@@ -40,10 +40,10 @@
                     </td>
                     <td>{{$resep->status}}</td>
                     <td>
-                        <form action="{{ route('resep.destroy', $resep->id) }}" method="post">
+                        <form action="{{ route('resepadmin.destroy', $resep->id) }}" method="post">
                             @csrf
                             @method('delete')
-                            <a href="{{ route('resep.edit', $resep->id) }}"
+                            <a href="{{ route('resepadmin.edit', $resep->id) }}"
                                 class="btn btn-sm btn-outline-success">
                                 Edit
                             </a>

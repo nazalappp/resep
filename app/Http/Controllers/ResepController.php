@@ -72,7 +72,7 @@ class ResepController extends Controller
         $reseps->bahan_bahan = $request->bahan_bahan;
         $reseps->langkah_langkah = $request->langkah_langkah;
         $reseps->save();
-        return redirect()->route('resep.index')->with('toast_success', 'Data has been edited');
+        return redirect()->route('resepadmin.index')->with('toast_success', 'Data has been edited');
     }
 
     /**
@@ -119,7 +119,7 @@ class ResepController extends Controller
         $reseps->status = $request->status;
         $reseps->save();
         return redirect()
-            ->route('resep.index')->with('toast_success', 'Data has been edited');
+            ->route('resepadmin.index')->with('toast_success', 'Data has been edited');
     }
 
     /**
@@ -133,6 +133,6 @@ class ResepController extends Controller
         $reseps = Resep::findOrFail($id);
         $reseps->delete();
         return redirect()
-            ->route('resep.index')->with('toast_success', 'Data has been deleted');
+            ->route('resepadmin.index')->with('toast_success', 'Data has been deleted');
     }
 }

@@ -35,7 +35,7 @@
                     </td>
                     <td>{{$resep->status}}</td>
                     <td>
-                        <form action="{{ route('resep.destroy', $resep->id) }}" method="post">
+                        <form action="{{ route('allresep.destroy', $resep->id) }}" method="post">
                             @csrf
                             @method('delete')
                             <button type="submit" class="btn btn-sm btn-outline-danger"
