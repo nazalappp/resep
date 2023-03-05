@@ -72,8 +72,7 @@ class ResepController extends Controller
         $reseps->bahan_bahan = $request->bahan_bahan;
         $reseps->langkah_langkah = $request->langkah_langkah;
         $reseps->save();
-        return redirect()
-            ->route('resep.index')->with('toast_success', 'Data has been edited');
+        return redirect()->route('profile')->with('toast_success', 'Data has been edited');
     }
 
     /**
